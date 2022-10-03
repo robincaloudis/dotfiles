@@ -1,26 +1,8 @@
 {
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "clangd.path": "C:\\Program Files\\LLVM\\bin\\clangd.exe",
-    "clangd.checkUpdates": true,
-    "clang-tidy.executable": "C:\\Program Files\\LLVM\\bin\\clang-tidy.exe",
-    "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-    "bazel.executable": "C:\\_tools\\bazel.exe",
-    "bazel.buildifierExecutable": "C:\\_tools\\buildifier-windows-amd64.exe",
-    "json.maxItemsComputed": 50000,
-    "C_Cpp.default.compileCommands": "C:\\_dev\\Faster\\faster\\compile_commands.json",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exe",
-    "terminal.integrated.allowChords": false,
     "workbench.colorCustomizations": {
         "editorError.foreground": "#ff000088",
         "editorWarning.foreground": "#ffe60033",
         "editorInfo.foreground": "#00ff0088"
-    },
-    "testMate.cpp.test.executables": "bazel-bin/**/test*/*.exe",
-    "testMate.cpp.test.workingDirectory": "${absDirpath}${osPathSep}${filename}.runfiles${osPathSep}${workspaceFolder[-1]}",
-    "grunt.autoDetect": "on",
-    "remote.SSH.remotePlatform": {
-        "10.254.89.138": "linux"
     },
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
