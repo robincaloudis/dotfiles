@@ -14,15 +14,31 @@ inoremap jj <ESC>
 " use mouse
 :set mouse=a
 
+" let new split appear on the right or under current window
+set splitbelow splitright
+
 set colorcolumn=80
 set scrolloff=3 " keep more context when scrolling off the end of a buffer
 set laststatus=2 " always show status bar
 
-" Move around splits with <c-hjkl>
+" Remap splits navigation to CTRL + hjkl
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+" Make adjusting split sizes friendly
+noremap <silent> <c-left> :vertical resize +3<CR>
+noremap <silent> <c-right> :vertical resize -3<CR>
+noremap <silent> <c-up> :resize +3<CR>
+noremap <silent> <c-down> :resize -3<CR>
+
+
+" Open terminal inside vim
+map <leader>tt :vnew term://bash<CR>
+
+" Remove pipes | that act as seperators on splits
+" set fillchars+=vert:\
 
 call plug#begin()
 
