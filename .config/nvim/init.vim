@@ -37,6 +37,10 @@ noremap <silent> <c-down> :resize -3<CR>
 " Open terminal inside vim
 map <leader>tt :vnew term://bash<CR>
 
+" Change 2 split windows from vert to horiz or horiz to vert
+map <leader>th <c-w>t<c-w>H
+map <leader>tk <c-w>t<c-w>K
+
 " Remove pipes | that act as seperators on splits
 " set fillchars+=vert:\
 
