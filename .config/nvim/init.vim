@@ -21,6 +21,11 @@ set colorcolumn=80
 set scrolloff=3 " keep more context when scrolling off the end of a buffer
 set laststatus=2 " always show status bar
 
+" synchronize clipboard register and default register in order to allow
+" copying across terminals
+" (https://vi.stackexchange.com/questions/4600/how-to-copy-across-terminals)
+set clipboard^=unnamed
+
 " Remap splits navigation to CTRL + hjkl
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
