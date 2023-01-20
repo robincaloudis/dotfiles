@@ -60,7 +60,7 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
-nnoremap <C-o> :Files<cr>
+nnoremap <C-p> :Files<cr>
 
 let g:fzf_layout = { 'down': '40%' }
 
