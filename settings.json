@@ -14,5 +14,10 @@
         120
     ],
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 120
+    "editor.wordWrapColumn": 120,
+    "editor.detectIndentation": true,
+    "editor.lineNumbers": "relative",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.config/nvim/init.vim",
+    "vim.hlsearch": true,
 }
