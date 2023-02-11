@@ -44,7 +44,23 @@
                     "args": []
                 }
             ]
-        }
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-1>"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "after": [
+                "<C-2>"
+            ]
+       }
     ],
     "vim.handleKeys": {
         "<C-j>": false,
