@@ -1,4 +1,5 @@
 // Geben Sie Ihre Tastenzuordnungen in dieser Datei ein, um die Standardwerte außer Kraft zu setzen.auto[]
+// To use Ctrl+Shift+E under Ubuntu, see https://github.com/microsoft/vscode/issues/84464#issuecomment-559415030
 [
     {
         "key": "ctrl+[f10]",
@@ -13,14 +14,6 @@
         "key": "ctrl+[f10]",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
-    },
-    {
-        "key": "shift+q",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+w",
-        "command": "-workbench.action.closeActiveEditor"
     },
     {
         "key": "ctrl+n",

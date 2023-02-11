@@ -50,5 +50,6 @@
         "<C-j>": false,
         "<C-b>": false,
         "<C-n>": false,
+        "<C-w>": false,
     }
 }
