@@ -45,5 +45,10 @@
                 }
             ]
         }
-    ]
+    ],
+    "vim.handleKeys": {
+        "<C-j>": false,
+        "<C-b>": false,
+        "<C-n>": false,
+    }
 }
