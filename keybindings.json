@@ -18,5 +18,9 @@
     {
         "key": "ctrl+n",
         "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]
