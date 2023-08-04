@@ -39,7 +39,7 @@
         "key": "ctrl+shift+j",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
-          "text": "$fileName = $(fzf); if ($null -ne $fileName) { code $fileName }"
+          "text": "$fileName = $(fzf --preview 'bat --color=always {}' --preview-window '~3'); if ($null -ne $fileName) { code $fileName }"
         }
     }
 ]
