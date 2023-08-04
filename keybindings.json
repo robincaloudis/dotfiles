@@ -34,5 +34,12 @@
     {
         "key": "ctrl+alt+left",
         "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+          "text": "$fileName = $(fzf); if ($null -ne $fileName) { code $fileName }"
+        }
     }
 ]
