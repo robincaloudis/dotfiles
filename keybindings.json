@@ -54,7 +54,7 @@
     },
     {
         "key": "ctrl+alt+w",
-        "command": "workbench.action.closeAllEditors"
+        "command": "workbench.action.closeOtherEditors"
     },
     {
         "key": "cmd+k cmd+w",
