@@ -1,4 +1,3 @@
-" -- Basic Vim settings --
 inoremap jj <ESC>
 
 " enable line numbers
@@ -13,6 +12,23 @@ inoremap jj <ESC>
 :set softtabstop=4
 " use mouse
 :set mouse=a
+
+" Let editor autosave everything
+:set autowrite
+
+" Show trailing whitespaces
+set list listchars=tab:\ \ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
+" Provide function to remove trailing whitespaces:
+" Source:
+" * https://vi.stackexchange.com/a/456
+" * https://www.reddit.com/r/neovim/comments/rw1qt7/comment/hr98m5o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+function! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfunction
+command! TrimWhitespace call TrimWhitespace()
 
 " let new split appear on the right or under current window
 set splitbelow splitright
@@ -40,7 +56,12 @@ noremap <silent> <c-down> :resize -3<CR>
 
 
 " Open terminal inside vim
-map <leader>tt :vnew term://bash<CR>
+" map <leader>tt :vnew term://bash<CR>
+
+" Leaving terminal mode more easy
+" If it makes issues, see:
+" https://github.com/vim/vim/issues/2216#issuecomment-337566816
+:tnoremap <Esc> <C-\><C-n>
 
 " Change 2 split windows from vert to horiz or horiz to vert
 map <leader>th <c-w>t<c-w>H
@@ -52,15 +73,17 @@ map <leader>tk <c-w>t<c-w>K
 call plug#begin()
 
 " Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/preservim/nerdtree'
+" Plug 'https://github.com/preservim/nerdtree'
 " Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
 
 call plug#end()
 
-nnoremap <C-p> :Files<cr>
+" noremap <C-p> :Files<cr>
 
 let g:fzf_layout = { 'down': '40%' }
 
@@ -77,3 +100,5 @@ endif
 "syntax enable
 "colorscheme OceanicNext
 autocmd vimenter * ++nested colorscheme gruvbox
+
+lua require('init')
