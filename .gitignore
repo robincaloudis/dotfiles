@@ -1,0 +1,39 @@
+# Mac
+.CFUserTextEncoding
+.android/
+.cocoapods/
+.config/flutter/
+.config/htop/
+.config/iterm2/
+.dart-tool/
+.dart/
+.dartServer/
+.flutter
+.flutter-devtools/
+.lesshst
+.lldb/
+.local/
+.npm/
+.oh-my-zsh/
+.pub-cache/
+.ssh/
+.swiftpm/
+.tmux.conf_copy
+.viminfo
+.vscode-oss-dev/
+.vscode/
+.yarnrc
+.zcompdump-MacBook Pro von Robin-5.9
+.zcompdump-MacBook Pro von Robin-5.9.zwc
+.zprofile
+.zsh_history
+.zsh_sessions/
+Desktop/
+Documents/
+Downloads/
+Library/
+Music/
+Pictures/
+Public/
+workdir/
+TO_DO.md
