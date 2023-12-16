@@ -17,7 +17,8 @@ require("nvim-tree").setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+	custom = {"/.gitignore_global"},
+	exclude = {"/.gitignore"},
     git_ignored = false,
   },
 })
