@@ -70,10 +70,12 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    z
-)
+plugins=(git)
+
+# `.zcompdump` is used by zsh completion system to speed up completion.
+# Dump to new location in order to not dump to $HOME.
+# See https://stackoverflow.com/a/71271754.
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,7 +104,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-alias v=nvim
+export PATH="/opt/homebrew/opt/node@18/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# The following is just for my personal deeper understanding as the brew
+# output has given useful outputs, which I wanted to save.
+#
+# For compilers to find llvm you may need to set
+# export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+# export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
