@@ -14,7 +14,7 @@ inoremap jj <ESC>
 :set mouse=a
 
 " Let editor autosave everything
-:set autowrite
+:set autowriteall
 
 " Show trailing whitespaces
 set list listchars=tab:\ \ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
