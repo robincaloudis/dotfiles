@@ -19,6 +19,7 @@
 .ssh/
 .swiftpm/
 .tmux.conf_copy
+.Trash/
 .viminfo
 .vscode-oss-dev/
 .vscode/
