@@ -1,4 +1,5 @@
 inoremap jj <ESC>
+let mapleader = ","
 
 " enable line numbers
 :set number
