@@ -18,6 +18,9 @@ plugins=(git)
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 
+# Include hidden files in search
+export FZF_DEFAULT_COMMAND='find .'
+
 # Compilation flags
 export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/node@18/include"
