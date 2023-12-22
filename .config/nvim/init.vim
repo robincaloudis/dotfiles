@@ -110,10 +110,13 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
+
 " Theme
 "syntax enable
 "colorscheme OceanicNext
-autocmd vimenter * ++nested colorscheme gruvbox
+
+" autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox
 
 " Change the active status line's color. As a color scheme is in
 " usage, we need to adjust the GUI color settings (guifg and guibg)
