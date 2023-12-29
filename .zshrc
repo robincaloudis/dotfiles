@@ -19,7 +19,8 @@ export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 
 # Include hidden files in search
-export FZF_DEFAULT_COMMAND='find .'
+# See https://github.com/junegunn/fzf/issues/337#issuecomment-136389913
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
 
 # Compilation flags
 export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
