@@ -127,7 +127,10 @@ colorscheme gruvbox
 " Smother status bar
 highlight StatusLine guifg=#bdae93 guibg=#282828
 
+
 :nnoremap <Leader>b :Buffers<CR>
+:nnoremap <Leader>f :GFiles<CR>
+:nnoremap <Leader>ff :Files<CR>
 :nnoremap <c-b> :NvimTreeToggle<CR>
 
 lua require('init')
