@@ -4,6 +4,7 @@ require('nvim-treesitter.configs').setup {
     "cpp",
     "rust",
     "bash",
+    "dart",
     "gitignore",
     "gitcommit",
     "html",
@@ -16,6 +17,9 @@ require('nvim-treesitter.configs').setup {
     "lua",
     "vim",
     "python"
+  },
+  highlight = {
+    enable = true,
   }
 }
 
