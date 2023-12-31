@@ -14,9 +14,6 @@ let mapleader = "."
 " use mouse
 :set mouse=a
 
-" Let editor autosave everything
-:set autowriteall
-
 " Show trailing whitespaces
 set list listchars=tab:\ \ ,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 
@@ -73,7 +70,6 @@ map <leader>tk <c-w>t<c-w>K
 
 call plug#begin()
 
-" Plug 'https://github.com/vim-airline/vim-airline'
 " Plug 'https://github.com/preservim/nerdtree'
 " Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
@@ -93,9 +89,24 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'dcampos/nvim-snippy'
 Plug 'dcampos/cmp-snippy'
+" Editor stuff
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
+" Formatting
+Plug 'sbdchd/neoformat'
+" Auto save
+Plug 'Pocco81/auto-save.nvim'
 " Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
+" Keep windows layout when buffers are closed
+Plug 'famiu/bufdelete.nvim'
+" Terminal
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
+" Buffers as tabs
+Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
+Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
+Plug 'romgrk/barbar.nvim'
 call plug#end()
 
 " noremap <C-p> :Files<cr>

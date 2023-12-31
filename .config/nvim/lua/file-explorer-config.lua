@@ -21,5 +21,9 @@ require("nvim-tree").setup({
 	exclude = {"/.gitignore"},
     git_ignored = false,
   },
+  update_focused_file = {
+    enable = true,
+    update_cwd = true,
+}
 })
 
