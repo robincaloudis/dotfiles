@@ -99,11 +99,11 @@ Plug 'sbdchd/neoformat'
 Plug 'Pocco81/auto-save.nvim'
 " Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Keep windows layout when buffers are closed
-Plug 'famiu/bufdelete.nvim'
+" Keep windows layout when buffers are closed (not needed as barbar is used)
+" Plug 'famiu/bufdelete.nvim'
 " Terminal
 Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
-" Buffers as tabs
+" Buffers as tabs (allow closing of buffers without messing up layout)
 Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
 Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
 Plug 'romgrk/barbar.nvim'
