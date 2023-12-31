@@ -20,7 +20,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Include hidden files in search
 # See https://github.com/junegunn/fzf/issues/337#issuecomment-136389913
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --unrestricted --ignore .git -l -g ""'
 
 # Compilation flags
 export LDFLAGS="-L/opt/homebrew/opt/node@18/lib"
