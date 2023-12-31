@@ -142,6 +142,7 @@ highlight StatusLine guifg=#bdae93 guibg=#282828
 :nnoremap <Leader>b :Buffers<CR>
 :nnoremap <Leader>f :GFiles<CR>
 :nnoremap <Leader>ff :Files<CR>
-:nnoremap <c-b> :NvimTreeToggle<CR>
+:nnoremap <S-b> :NvimTreeToggle<CR>
+:nnoremap <S-j> :ToggleTerm<CR>
 
 lua require('init')
