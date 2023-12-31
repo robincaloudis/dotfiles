@@ -134,7 +134,7 @@ colorscheme gruvbox
 " usage, we need to adjust the GUI color settings (guifg and guibg)
 " instead of ctermfg and ctermbg.
 " Red status bar, white text
-" highlight StatusLine guifg=#fb4934 guibg=#282828
+" highlight StatusLine guiToggleTermfg=#fb4934 guibg=#282828
 " Smother status bar
 highlight StatusLine guifg=#bdae93 guibg=#282828
 
