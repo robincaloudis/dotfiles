@@ -145,4 +145,10 @@ highlight StatusLine guifg=#bdae93 guibg=#282828
 :nnoremap <S-b> :NvimTreeToggle<CR>
 :nnoremap <S-j> :ToggleTerm<CR>
 
+" Auto formatting
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+
 lua require('init')
