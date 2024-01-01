@@ -1,8 +1,9 @@
 require('mason').setup()
-local servers = { 'clangd' }
+local mason_ls = { 'clangd' }
+local additional_ls = { 'dartls' }
 
 require('mason-lspconfig').setup {
-    ensure_installed = servers,
+    ensure_installed = mason_ls,
 }
 
 local cmp = require('cmp')
@@ -74,7 +75,18 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-for _, lsp in ipairs(servers) do
+function addLists(list1, list2)
+    local newList = {}
+    for i = 1, #list1 do
+        table.insert(newList, list1[i])
+    end
+    for i = 1, #list2 do
+        table.insert(newList, list2[i])
+    end
+    return newList
+end
+
+for _, lsp in ipairs(addLists(mason_ls, additional_ls)) do
     require('lspconfig')[lsp].setup {
         on_attach = custom_attach,
         capabilities = capabilities,
