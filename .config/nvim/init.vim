@@ -142,13 +142,21 @@ highlight StatusLine guifg=#bdae93 guibg=#282828
 :nnoremap <Leader>b :Buffers<CR>
 :nnoremap <Leader>f :GFiles<CR>
 :nnoremap <Leader>ff :Files<CR>
+:nnoremap <Leader>s :GGrep<CR>
 :nnoremap <S-b> :NvimTreeToggle<CR>
 :nnoremap <S-j> :ToggleTerm<CR>
 
 " Auto formatting
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * undojoin | Neoformat
+" augroup END
+
+command! Format :Neoformat
+
+command! -bang -nargs=* GGrep
+  \ call fzf#vim#grep(
+  \   'git grep --line-number -- '.fzf#shellescape(<q-args>),
+  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
 
 lua require('init')
