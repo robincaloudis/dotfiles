@@ -107,6 +107,8 @@ Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
 Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
 Plug 'romgrk/barbar.nvim'
+" Auto-completion for quotes, parens, brackets, etc.
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " noremap <C-p> :Files<cr>
