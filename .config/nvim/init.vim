@@ -10,6 +10,7 @@ let mapleader = "."
 :set tabstop=4
 :set shiftwidth=4
 :set smarttab
+:set expandtab
 :set softtabstop=4
 " use mouse
 :set mouse=a
@@ -142,8 +143,8 @@ highlight StatusLine guifg=#bdae93 guibg=#282828
 
 
 :nnoremap <Leader>b :Buffers<CR>
-:nnoremap <Leader>f :GFiles<CR>
-:nnoremap <Leader>ff :Files<CR>
+:nnoremap <Leader>ff :GFiles<CR>
+:nnoremap <Leader>f :Files<CR>
 :nnoremap <Leader>s :GGrep<CR>
 :nnoremap <S-b> :NvimTreeToggle<CR>
 :nnoremap <S-j> :ToggleTerm<CR>
