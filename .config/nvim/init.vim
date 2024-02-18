@@ -41,6 +41,13 @@ set laststatus=2 " always show status bar
 " (https://vi.stackexchange.com/questions/4600/how-to-copy-across-terminals)
 set clipboard^=unnamed
 
+" Show current working directory in vim
+" Inspired by https://stackoverflow.com/a/33034198
+set laststatus=2
+set statusline=%F
+set statusline+=%=
+set statusline+=%{getcwd()}
+
 " Remap splits navigation to CTRL + hjkl
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
