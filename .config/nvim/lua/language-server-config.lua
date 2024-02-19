@@ -1,5 +1,5 @@
 require('mason').setup()
-local mason_ls = { 'clangd' }
+local mason_ls = { 'clangd', 'rust_analyzer' }
 local additional_ls = { 'dartls' }
 
 require('mason-lspconfig').setup {
