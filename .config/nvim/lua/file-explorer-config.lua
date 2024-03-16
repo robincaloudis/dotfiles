@@ -10,6 +10,11 @@ require("nvim-tree").setup({
   sort = {
     sorter = "case_sensitive",
   },
+  actions = {
+    open_file = {
+      resize_window=false,
+    },
+  },
   view = {
     width = 30,
   },
