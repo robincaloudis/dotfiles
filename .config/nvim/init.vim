@@ -1,3 +1,12 @@
+" You can use your existing ~/.vimrc, files, and plugins located 
+" within ~/.vim without having to symlink the files. The above 
+" lines will add the existing paths and ~/.vimrc file to your nvim
+" setup.
+
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+
 inoremap jj <ESC>
 let mapleader = "."
 
@@ -7,11 +16,12 @@ let mapleader = "."
 :set relativenumber
 " tab and indentation
 :set autoindent
-:set tabstop=4
-:set shiftwidth=4
 :set smarttab
-:set expandtab
-:set softtabstop=4
+":set tabstop=4
+" A tab produces a 2-space indentation
+set softtabstop=2
+set shiftwidth=2
+set expandtab
 " use mouse
 :set mouse=a
 
