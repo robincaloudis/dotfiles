@@ -2,7 +2,7 @@
 " within ~/.vim without having to symlink the files. The above 
 " lines will add the existing paths and ~/.vimrc file to your nvim
 " setup.
-
+" https://vi.stackexchange.com/questions/12794/how-to-share-config-between-vim-and-neovim
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
